@@ -1,2 +1,1 @@
-export const INITIAL_ROWS=[];
-export const INITIAL_SKUS={};
+export const INITIAL_ROWS=[];export const INITIAL_SKUS={};
