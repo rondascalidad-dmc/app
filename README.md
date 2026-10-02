@@ -1,3 +1,3 @@
-# Rondas de Calidad V4
+# Rondas de Calidad V5
 
-Incluye adherencia de mes parcial, comentarios consolidados, indicadores visuales estilo Power BI y carga/exportación de Excel.
+Incluye terminología por persona, adherencia por operación y etiquetas del gráfico separadas.
