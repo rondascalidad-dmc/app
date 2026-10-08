@@ -1,3 +1,3 @@
-# Rondas de Calidad V5
+# Rondas de Calidad V6
 
-Incluye terminología por persona, adherencia por operación y etiquetas del gráfico separadas.
+Agrega PRI y una nueva regla de adherencia diaria: una misma persona debe relevar al menos dos operaciones distintas por día, de lunes a sábado.
