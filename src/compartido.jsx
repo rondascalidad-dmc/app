@@ -12,7 +12,7 @@ export async function leerCompartido() {
   if (error) return null;
   return Object.fromEntries(data.map(r => [r.id, r.datos]));
 }
-export async function esAdmin() { const { data } = await sb.auth.getSession(); return !!(data && data.session); }
+export async function esAdmin() { const { data } = await sb.auth.getSession(); return !!(data && data.session && !/^(?!administrador@)[^@]+@personal\.local$/i.test(data.session.user.email || '')); }
 /* devuelve un texto para mostrar en el aviso */
 export async function subirCompartido(id, datos) {
   if (!(await esAdmin())) return 'Quedó solo en este navegador. Para que lo vea todo el equipo, entrá como Admin (abajo a la izquierda) y volvé a cargarlo.';
@@ -34,7 +34,7 @@ export function AdminBoton() {
     if (error) { setErr('Correo o contraseña incorrectos'); return; }
     setPass(''); setAdmin(true); setAbierto(false);
   }
-  async function salir() { await sb.auth.signOut(); setAdmin(false); }
+  async function salir() { await sb.auth.signOut(); location.reload(); }
   return (
     <div style={box}>
       {admin

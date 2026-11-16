@@ -1,1 +1,1 @@
-import React from'react';import{createRoot}from'react-dom/client';import App from'./App.jsx';import{AdminBoton}from'./compartido.jsx';import'./styles.css';createRoot(document.getElementById('root')).render(<><App/><AdminBoton/></>);
+import React from'react';import{createRoot}from'react-dom/client';import App from'./App.jsx';import{AdminBoton}from'./compartido.jsx';import{Acceso}from'./Acceso.jsx';import'./styles.css';createRoot(document.getElementById('root')).render(<Acceso><App/><AdminBoton/></Acceso>);
